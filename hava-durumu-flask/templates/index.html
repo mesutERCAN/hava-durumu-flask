@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hava Durumu</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Hava Durumu Sorgulayıcı</h1>
+    <form method="POST">
+        <input type="text" name="city" placeholder="Şehir giriniz" required>
+        <button type="submit">Sorgula</button>
+    </form>
+    {% if weather %}
+        <div class="result">
+            <h2>{{ weather.city }}</h2>
+            <p>{{ weather.description }} | {{ weather.temperature }}°C</p>
+            <p>Nem: {{ weather.humidity }}% | Rüzgar: {{ weather.wind }} km/h</p>
+        </div>
+    {% endif %}
+</body>
+</html>
