@@ -21,4 +21,4 @@ python app.py
 
 ---
 
-Bu proje GitHub kullanıcısı **mesutERCAN** için hazırlanmıştır.
+Bu proje GitHub kullanıcısı **mesutERCAN** hazırlanmıştır.
